@@ -1,0 +1,22 @@
+{
+  "name": "webian-home",
+  "version": "1.0.0",
+  "description": "Home web server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webianproject/home.git"
+  },
+  "author": "Ben Francis",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/webianproject/home/issues"
+  },
+  "homepage": "https://webian.org/home",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

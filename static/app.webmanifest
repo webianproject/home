@@ -1,0 +1,13 @@
+{
+  "name": "Webian Home",
+  "short_name": "Home",
+  "start_url": "/",
+  "display": "standalone",
+  "description": "A web server for your home",
+  "icons": [{
+    "src": "images/icon.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  }],
+  "background-color": "#333333"
+}
