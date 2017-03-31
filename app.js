@@ -1,6 +1,8 @@
 /*
 © Ben Francis 2017
 
+Main back end script
+
 This file is part of Webian Home.
 
 Webian Home is free software: you can redistribute it and/or modify
@@ -21,6 +23,6 @@ var app = express();
 
 app.use(express.static('static'));
 
-app.listen(8080, function () {
-  console.log('Listening on port 8080.');
+app.listen(8081, function () {
+  console.log('Listening on port 8081.');
 });
