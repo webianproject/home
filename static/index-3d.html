@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Webian Home</title>
+    <link rel="stylesheet" type="text/css" href="css/app-3d.css" />
+    <link rel="manifest" href="app.webmanifest">
+    <link rel="icon" href="images/icon.png" type="image/png" />
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene id="background">
+      <!-- Modelled as a wireframe, using A-Frame's default material instead of mtl -->
+      <a-obj-model src="obj/house.obj" position="0 0 -6">
+        <a-animation attribute="rotation" dur="20000" fill="forwards" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear">
+        </a-animation>
+      </a-obj-model>
+      <!-- Modelled as a wireframe, using exported mtl file -->
+      <!--<a-obj-model src="obj/house.obj" mtl="obj/house.mtl" position="0 0 -6">
+        <a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite">
+        </a-animation>
+      </a-obj-model>-->
+      <!-- Exported as a normal model, using the wireframe option in A-Frame -->
+      <!--<a-obj-model src="obj/house2.obj" position="0 0 -6" wireframe="true">
+        <a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite">
+        </a-animation>
+      </a-obj-model>-->
+
+
+      <!--<a-box id="cube1" detail="5" position="0 0 -5" width="1" height="1" depth="1" wireframe="true"></a-cube>-->
+      <!--<a-sphere id="sphere1" position="-0.75 1.5 -5" radius="0.6" color="#fff"></a-sphere>
+      <a-text position="-0.75 0.5 -5" width="1.2" align="center" wrap-count="12" value="Smart Switch (ZigBee)"></a-text>
+      <a-sphere id="sphere2" position="0.75 1.5 -5" radius="0.6" color="#fff"></a-sphere>
+      <a-text position="0.75 0.5 -5" wrap-count="12" width="1.2" align="center" value="Smart Switch (Z-Wave)"></a-text>-->
+      <a-sky color="#5d9bc7"></a-sky>
+    </a-scene>
+    <img id="wordmark" src="images/moziot_wordmark.png" />
+  </body>
+</html>

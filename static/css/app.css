@@ -49,10 +49,22 @@ section.selected {
   display: block;
 }
 
-#floorplan-view, #model-view {
+#settings-view {
   background-image: url('../images/wordmark.svg');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#floorplan {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #fff;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #menu-button {

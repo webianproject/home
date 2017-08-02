@@ -27,16 +27,23 @@ along with Webian Home.  If not, see <http://www.gnu.org/licenses/>.
     <script type="text/javascript" src="js/menu.js"></script>
     <link rel="stylesheet" type="text/css" href="css/app.css" />
     <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   </head>
   <body>
     <!-- Floor Plan View -->
     <section data-view="floorplan" class="selected" id="floorplan-view">
-
+      <img id="floorplan" src="images/floorplan.svg" />
     </section>
 
     <!-- Model View -->
     <section data-view="model" id="model-view" class="hidden">
-
+      <a-scene id="background">
+        <a-obj-model src="obj/house.obj" position="0 0 -6">
+          <a-animation attribute="rotation" dur="20000" fill="forwards" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear">
+          </a-animation>
+        </a-obj-model>
+        <a-sky color="#5d9bc7"></a-sky>
+      </a-scene>
     </section>
 
     <!-- Settings View -->
