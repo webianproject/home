@@ -3,7 +3,7 @@
   "short_name": "Home",
   "start_url": "/",
   "display": "standalone",
-  "description": "A web server for your home",
+  "description": "A home screen for your home",
   "icons": [{
     "src": "images/icon.png",
     "sizes": "256x256",

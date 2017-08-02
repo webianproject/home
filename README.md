@@ -1,23 +1,16 @@
 # Webian Home
-Home web server
+A home screen for your home
 
 ## Get Started
-Make sure that you have a recent version of [NodeJS](https://nodejs.org) installed.
+Make sure that you have [Git](https://git-scm.com/), [NodeJS](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/) installed.
 
-Clone the GitHub repository (or fork it first):
+To get started hacking, simply clone the home repository from GitHub and run the server.
 
-```$ git clone https://github.com/webianproject/home.git```
+```
+$ git clone https://github.com/webianproject/home.git
+$ cd home
+$ npm install
+$ npm start
+```
 
-Change into the gateway directory:
-
-```$ cd home```
-
-Install dependencies:
-
-```$ npm install```
-
- Start the web server:
-
-```$ node app.js```
-
-Load ```http://localhost:8081``` in your web browser.
+Load ```http://localhost:8080``` in your web browser or use it with [Webian Shell](https://github.com/webianproject/shell).
